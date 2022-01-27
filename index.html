@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="Calc.js"></script>
+    </head>
+    <body>
+        <!--Calculator Box-->
+            <div class="container box col-lg-6">
+                <!--Input Box-->
+                <div class="row ">
+                    <div class="col-lg-12 nopadding">
+                        <input type="text" name="Calc" id="Calc" class="form-control">
+                    </div>
+                </div>
+            <!--Number Row 1-->
+            <div class="row ">
+                <div class="col-lg-3 nopadding">
+                    <button id="one" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('1')">1</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="two" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('2')">2</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="three" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('3')">3</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="add" class="btn btn-success btn-block btn_font" onclick="UserClickButton('+')">+</button>
+                </div>
+            </div>
+            <!--Number Row 2-->
+            <div class="row ">
+                <div class="col-lg-3 nopadding">
+                    <button id="four" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('4')">4</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="five" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('5')">5</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="six" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('6')">6</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="subtract" class="btn btn-success btn-block btn_font" onclick="UserClickButton('-')">-</button>
+                </div>
+            </div>
+            <!--Number Row 3-->
+            <div class="row ">
+                <div class="col-lg-3 nopadding">
+                    <button id="seven" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('7')">7</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="eight" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('8')">8</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="nine" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('9')">9</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="multiply" class="btn btn-success btn-block btn_font" onclick="UserClickButton('*')">*</button>
+                </div>
+            </div>
+            <!--Number Row 4-->
+            <div class="row ">
+                <div class="col-lg-3 nopadding">
+                    <button class="btn btn-primary btn-block btn_font" onclick="UserClickButton('.')">.</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="zero" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('0')">0</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button id="equal" class="btn btn-primary btn-block btn_font" onclick="CalculateValue()">=</button>
+                </div>
+               
+                <div class="col-lg-3 nopadding">
+                    <button id="division" class="btn btn-success btn-block btn_font" onclick="UserClickButton('/')">/</button>
+                </div>
+            </div>
+            <!--Number Row 5-->
+            <div class="row">
+                <div class="col-lg-3 nopadding">
+                    <button id="clear" class="btn btn-primary btn-block btn_font" onclick="UserClickButton('00')">00</button>
+                </div>
+               
+                <div class="col-lg-6 nopadding">
+                    <button id="clear" class="btn btn-primary btn-block btn_font" onclick="ClearData()">AC</button>
+                </div>
+                <div class="col-lg-3 nopadding">
+                    <button class="btn btn-success btn-block btn_font" onclick="UserClickButton('**')">^</button>
+                </div>
+            </div>
+            </div>
+            <!--History Box-->
+            <div class="container box col-lg-6 ">
+            <div class="row">
+                <h3>History</h3>
+                <div class="col-lg-12" id="history_log">
+                    
+                </div>
+                
+            </div>
+            </div>
+
+            <script src="Calc.js"></script>
+
+            <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+        
+    </body>
+</html>
